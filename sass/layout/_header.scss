@@ -1,0 +1,118 @@
+.header {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    position: relative;
+  
+    &__navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      &--logo {
+        @include btn;
+        @include bg-lightblue;
+      }
+  
+      &--nav-items {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-around;
+        align-content: center;
+        grid-gap: auto;
+        min-width: 50%;
+  
+        @include respond(ipad) {
+          min-width: 70%;
+        }
+        @include respond(ipad-small) {
+          display: none;
+        }
+      }
+  
+      &--nav-item {
+        transition: linear 0.1s;
+  
+        &:hover {
+          transform: scale(1.2);
+          cursor: pointer;
+          color: $color-light-blue;
+        }
+      }
+    }
+  
+    &__titlebar {
+      display: grid;
+      align-content: center;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      margin: 5rem 0;
+  
+      &--title {
+        display: grid;
+        grid-template-rows: 5fr 2fr;
+      }
+      &--btn {
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+      &--animation {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+    }
+  }
+  .btn {
+    @include btn;
+    transition: linear 0.1s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+  .bg-orange {
+    @include bg-orange;
+  }
+  .bg-lightblue {
+    @include bg-lightblue;
+  }
+  .bg-green {
+    @include bg-green;
+  }
+  .animation__item--5 {
+    padding: 2rem;
+  }
+  .animation__item--3 {
+    padding: 4rem;
+  }
+  
+  // navbar icon
+  .header__navbar--icon {
+    display: flex;
+    width: 5rem;
+    height: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid;
+  
+    &-line {
+      border-bottom: 3px solid $color-light-blue;
+      width: 100%;
+      margin: 10% 0;
+    }
+  }
+  .show-item {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // position: absolute;
+    top: 20%;
+    right: 0;
+    border: 2px solid;
+  }
+  
