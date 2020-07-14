@@ -3,7 +3,6 @@ const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
 const watch = require("gulp-watch");
 const imagemin = require("gulp-imagemin");
-const del = require("del");
 
 gulp.task("sass-compile", function () {
   return gulp
