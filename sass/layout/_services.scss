@@ -1,0 +1,23 @@
+.section__services {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    &--features {
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 10rem;
+    }
+  }
+  .bg-text {
+    position: absolute;
+    opacity: 0.2;
+    text-align: center;
+    z-index: 0;
+  }
