@@ -1,0 +1,25 @@
+{
+  "name": "website-portfolio-1",
+  "version": "1.0.0",
+  "description": "My first simple portfolio website that tells a customer about our services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dastan0017/Website-Portfolio-1.git"
+  },
+  "author": "Dastan Rakhmanzhanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dastan0017/Website-Portfolio-1/issues"
+  },
+  "homepage": "https://github.com/dastan0017/Website-Portfolio-1#readme",
+  "devDependencies": {
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1"
+  }
+}
