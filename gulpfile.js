@@ -18,13 +18,13 @@ gulp.task("watch", function () {
 });
 gulp.task("img-compress", function () {
   return gulp
-    .src("./img/**")
+    .src("./img-not-compressed/**")
     .pipe(
       imagemin({
         progressive: true,
       })
     )
-    .pipe(gulp.dest("./img-not-compressed/"));
+    .pipe(gulp.dest("./img/"));
 });
 
 // tasks default, it will run watch
