@@ -1,4 +1,5 @@
 .section__works {
+    position: relative;
     padding: 5rem;
     display: flex;
     justify-content: center;
@@ -11,6 +12,11 @@
       justify-content: space-around;
       width: 100%;
       padding: 2rem 5rem;
+
+      @include respond(ipad-small) {
+        flex-direction: column;
+        justify-content: center;
+      }
   
       @include respond(tab-port) {
         padding: 0;
@@ -27,6 +33,12 @@
     padding-bottom: 5rem;
     background: $color-white;
     border-radius: 18px;
+
+    @include respond(ipad-small) {
+      height: 100%;
+      width: 50%;
+      align-self: center;
+    }
   
     @include respond(tab-port) {
       border-radius: 14px;
@@ -54,4 +66,3 @@
       font-size: 16px;
     }
   }
-  

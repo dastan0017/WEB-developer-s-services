@@ -17,60 +17,59 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-      @media only screen and (max-width: 37.5em) {
-        @content;
-      } //600px
-    }
-    @if $breakpoint == ipad-small {
-      @media only screen and (max-width: 38.15em) {
-        @content;
-      } //800px
-    }
-    @if $breakpoint == ipad {
-      @media only screen and (max-width: 50em) {
-        @content;
-      } //800px
-    }
-    @if $breakpoint == tab-port {
-      @media only screen and (max-width: 56.25em) {
-        @content;
-      } //900px
-    }
-    @if $breakpoint == tab-land {
-      @media only screen and (max-width: 75em) {
-        @content;
-      } //1200px
-    }
-    @if $breakpoint == big-desktop {
-      @media only screen and (min-width: 112.5em) {
-        @content;
-      } //1800
-    }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 30.5em) {
+      @content;
+    } //600px
   }
-  
-  @mixin btn {
-    padding: 0.5rem 2.5rem;
-    border-radius: 12px;
-    border: none;
+  @if $breakpoint == ipad-small {
+    @media only screen and (max-width: 39.15em) {
+      @content;
+    } //610px
   }
-  @mixin btn-text {
-    font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 42px;
-    letter-spacing: 0.2em;
-    color: $color-white;
+  @if $breakpoint == ipad {
+    @media only screen and (max-width: 50em) {
+      @content;
+    } //800px
   }
-  
-  @mixin bg-orange {
-    background: $color-orange;
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
   }
-  
-  @mixin bg-lightblue {
-    background: $color-light-blue;
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
   }
-  
-  @mixin bg-green {
-    background: $color-green;
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
   }
-  
+}
+
+@mixin btn {
+  padding: 0.5rem 2.5rem;
+  border-radius: 12px;
+  border: none;
+}
+@mixin btn-text {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 42px;
+  letter-spacing: 0.2em;
+  color: $color-white;
+}
+
+@mixin bg-orange {
+  background: $color-orange;
+}
+
+@mixin bg-lightblue {
+  background: $color-light-blue;
+}
+
+@mixin bg-green {
+  background: $color-green;
+}

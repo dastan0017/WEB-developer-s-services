@@ -1,23 +1,38 @@
 .section__services {
-    padding: 5rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &--features {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  
-    &--features {
-      width: 100%;
-      display: flex;
-      text-align: center;
-      justify-content: space-around;
-      align-items: flex-start;
-      padding: 10rem;
+    text-align: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10rem;
+
+    @include respond(ipad-small) {
+      padding: 0;
+      justify-content: space-between;
     }
   }
-  .bg-text {
-    position: absolute;
-    opacity: 0.2;
-    text-align: center;
-    z-index: 0;
+
+  @include respond(ipad-small) {
+    padding: 10rem 0;
   }
+}
+.bg-text {
+  position: absolute;
+  opacity: 0.2;
+  text-align: center;
+  z-index: 0;
+}
+.services__features {
+  @include respond(ipad-small) {
+    // margin: 2rem;
+    width: 33%;
+  }
+}
