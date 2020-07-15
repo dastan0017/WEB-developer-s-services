@@ -14,24 +14,63 @@
   <body>
     <div class="container">
       <header>
+        <div class="navigation">
+          <input
+            type="checkbox"
+            class="navigation__checkbox"
+            id="navi-toggle"
+          />
+
+          <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
+
+          <div class="navigation__background">&nbsp;</div>
+
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#footer" class="navigation__link"
+                  ><span>01</span>Gettng Started</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#services" class="navigation__link"
+                  ><span>02</span>Services</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#works" class="navigation__link"
+                  ><span>03</span>Works</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#header" class="navigation__link"
+                  ><span>04</span>About</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div class="layout__container">
-          <div class="header">
+          <div class="header" id="header">
             <div class="header__navbar">
               <div class="header__navbar--logo">
                 Bat Solve
               </div>
               <div class="header__navbar--nav-items">
-                <div class="header__navbar--nav-item">Getting Started</div>
+                <div class="header__navbar--nav-item">
+                  <a href="#footer">Getting Started</a>
+                </div>
                 <div class="header__navbar--nav-item">
                   <a href="#services">Services</a>
                 </div>
-                <div class="header__navbar--nav-item">Works</div>
-                <div class="header__navbar--nav-item">About</div>
-              </div>
-              <div class="header__navbar--icon">
-                <div class="header__navbar--icon-line icon__line--top"></div>
-                <div class="header__navbar--icon-line icon__line--middle"></div>
-                <div class="header__navbar--icon-line icon__line--bottom"></div>
+                <div class="header__navbar--nav-item">
+                  <a href="#works">Works</a>
+                </div>
+                <div class="header__navbar--nav-item">
+                  <a href="#header">About</a>
+                </div>
               </div>
             </div>
 
@@ -104,7 +143,7 @@
         </section>
         <section>
           <div class="layout__container">
-            <div class="section__works bg-green">
+            <div class="section__works bg-green" id="works">
               <div class="section__works--title">
                 <h3>What kind of website do you want to have?</h3>
               </div>
@@ -160,7 +199,7 @@
 
       <footer>
         <div class="layout__container bg-lightblue">
-          <div class="footer">
+          <div class="footer" id="footer">
             <div class="footer__title"><h3>Follow Us</h3></div>
             <div class="footer__subscribbar">
               <div class="footer__subscribbar--form">

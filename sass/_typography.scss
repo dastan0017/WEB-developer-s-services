@@ -48,6 +48,10 @@ html {
   line-height: 70px;
   letter-spacing: 0.2em;
   color: $color-blue;
+
+  @include respond(ipad-small) {
+    font-size: 14px;
+  }
 }
 .text-orange {
   color: $color-orange;
@@ -65,6 +69,7 @@ h3 {
   font-size: 16px;
   line-height: 23px;
   letter-spacing: 0.2em;
+  text-align: center;
 }
 .services__features {
   font-weight: 600;
@@ -72,6 +77,10 @@ h3 {
   font-size: 22px;
   line-height: 7rem;
   letter-spacing: 0.05em;
+
+  @include respond(ipad-small) {
+    font-size: 16px;
+  }
 }
 .services__features--title {
   color: $color-white;
@@ -79,10 +88,22 @@ h3 {
 .bg-text {
   color: $color-white;
   font-size: 25rem;
+  @include respond(ipad) {
+    font-size: 20rem;
+  }
+  @include respond(ipad-small) {
+    font-size: 12rem;
+  }
 }
 .bg-text__social {
   font-size: 10em;
 }
 .text-blue {
   color: $color-blue;
+}
+
+// Footer
+.form__input {
+  font-weight: bold;
+  font-size: 14px;
 }
