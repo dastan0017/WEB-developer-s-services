@@ -62,6 +62,7 @@
     &--btn {
       grid-row-start: 3;
       grid-row-end: 4;
+      border: none;
     }
     &--animation {
       display: grid;
@@ -72,6 +73,8 @@
 .btn {
   @include btn;
   transition: linear 0.1s;
+  border: none;
+  outline-style: none;
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
