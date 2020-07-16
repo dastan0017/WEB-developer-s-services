@@ -1,68 +1,73 @@
 .section__works {
-    position: relative;
-    padding: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  
-    &--samples {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 100%;
-      padding: 2rem 5rem;
+  position: relative;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-      @include respond(ipad-small) {
-        flex-direction: column;
-        justify-content: center;
-      }
-  
-      @include respond(tab-port) {
-        padding: 0;
-      }
-    }
-  
-    @include respond(tab-port) {
-      padding: 5rem 0;
-    }
-  }
-  .works__sample {
-    height: 100%;
-    margin: 3rem;
-    padding-bottom: 5rem;
-    background: $color-white;
-    border-radius: 18px;
+  &--samples {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem 5rem;
 
     @include respond(ipad-small) {
-      height: 100%;
-      width: 50%;
-      align-self: center;
+      flex-direction: column;
+      justify-content: center;
     }
-  
+
     @include respond(tab-port) {
-      border-radius: 14px;
-    }
-  
-    @include respond(ipad) {
-      margin: 3rem 3rem 0 3rem;
-      height: auto;
-    }
-    &--img {
-      width: 100%;
-      height: 50%;
-      opacity: 0.5;
-      transition: 0.1s;
-  
-      &:hover {
-        opacity: 1;
-        transform: scale(1.1);
-        border-radius: 18px;
-      }
-    }
-    &--subheading {
-      margin-top: 10%;
-      text-align: center;
-      font-size: 16px;
+      padding: 0;
     }
   }
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
+}
+.works__sample {
+  height: 100%;
+  margin: 3rem;
+  padding-bottom: 5rem;
+  background: $color-white;
+  border-radius: 18px;
+
+  @include respond(ipad-small) {
+    height: 100%;
+    width: 50%;
+    align-self: center;
+  }
+
+  @include respond(tab-port) {
+    border-radius: 14px;
+  }
+
+  @include respond(ipad) {
+    margin: 3rem 3rem 0 3rem;
+    height: auto;
+  }
+  &--img {
+    width: 100%;
+    height: 50%;
+    opacity: 0.5;
+    transition: 0.1s;
+    border-radius: 2rem;
+
+    @include respond(ipad-small) {
+      border-radius: 1.2rem;
+    }
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1);
+      border-radius: 18px;
+    }
+  }
+  &--subheading {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
